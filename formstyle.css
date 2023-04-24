@@ -1,0 +1,76 @@
+/* Styling for the form container */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the form headings */
+  h2, p {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Styling for the form inputs */
+  input[type=text], input[type=email], input[type=password], input[type=tel], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type=color] {
+    margin-right: 10px;
+  }
+  
+  /* Styling for the form labels */
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the form button */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the form button on hover */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for the form divs */
+  div {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the form radio buttons */
+  input[type=radio] {
+    margin-right: 10px;
+  }
+  
+  /* Styling for the form select dropdown */
+  select {
+    height: 40px;
+  }
+  
+  /* Styling for the form error messages */
+  input:invalid {
+    border: 2px solid red;
+  }
+  

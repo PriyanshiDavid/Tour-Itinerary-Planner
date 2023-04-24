@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tour Itinerary Planner</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#destination").change(function() {
+				var destination = $(this).val();
+				$.ajax({
+					url: "get_info.php",
+					method: "POST",
+					data: { destination: destination },
+					dataType: "json",
+					success: function(data) {
+						$("#description").html(data.description);
+						$("#weather").html(data.weather);
+						$("#activities").html(data.activities);
+					}
+				});
+			});
+		});
+	</script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>TripWizard</h1>
+        <nav class="navbar">
+          
+            <a href="#">Home<br></a>
+            <a href="Destinations.html">Destinations<br></a>
+            <a href="Form.html">Feedback Form<br></a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="search-container">
+        <h2>Plan Your Dream Trip</h2>
+        <label for="destination">Select Destination:</label>
+	      <select id="destination">
+		    <option value="">Select Activities</option>
+		    <option value="paris">New York City Sightseeing</option>
+		    <option value="tokyo">Hiking in the Grand Canyon</option>
+		    <option value="sydney">Staying in a luxury hotel</option>
+	      </select>
+	      <div id="description"></div>
+	      <div id="weather"></div>
+	      <div id="activities"></div>
+      </div>
+      <div class="destinations-container">
+        <h2>Popular Destinations Suggestions:</h2>
+        <div class="destination-card">
+          <img src="nyc.jpg" width="45%">
+          <h3>New York City</h3>
+          <p>Explore the city that never sleeps</p>
+        </div>
+        <!-- More destination cards here -->
+      </div>
+      <div class="activities-container">
+        <h2>Popular Activities</h2>
+        <div class="activity-card">
+          <img src="gc.jpg" width="45%">
+          <h3>Hiking in the Grand Canyon</h3>
+          <p>Experience the natural beauty of the Grand Canyon</p>
+        </div>
+        <!-- More activity cards here -->
+      </div>
+      <div class="accommodations-container">
+        <h2>Popular Accommodations</h2>
+        <div class="accommodation-card">
+          <img src="hotel.webp" width="45%">
+          <h3>Luxury Hotel</h3>
+          <p>Relax in comfort and style</p>
+        </div>
+        <!-- More accommodation cards here -->
+      </div>
+      <div class="itinerary-container">
+        <h2>My Itinerary</h2>
+        <ul id="itinerary-list">
+          <!-- Itinerary items will be dynamically added here using JavaScript -->
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2023 Tour Itinerary Planner</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

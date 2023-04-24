@@ -1,0 +1,109 @@
+/* body {
+    background-color: lightyellow;
+}
+
+
+h1 {
+    background-color: pink;
+    width: 200px;
+    padding-left: 700px;
+    padding-right: 700px;
+    margin: auto;
+}
+
+#one {
+    background-color: pink;
+    border-width: 5px;
+    border-color: black; 
+    border-style: solid;
+    /* box-sizing: border-box; */
+    /* margin-bottom: 100px;
+}
+
+*{
+    color:purple;
+}
+
+
+*/
+
+
+/* CSS for header and navbar */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* CSS for search container */
+  .search-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #destination {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* CSS for destination cards */
+  .destination-card, .activity-card, .accommodation-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+  }
+  
+  .destination-card img, .activity-card img, .accommodation-card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .destination-card h3, .activity-card h3, .accommodation-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* CSS for itinerary container */
+  .itinerary-container {
+    margin-top: 20px;
+  }
+  
+  #itinerary-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #itinerary-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+  }
+  

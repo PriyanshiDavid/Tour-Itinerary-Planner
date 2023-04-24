@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destination Catalogue</title>
+	<style>
+        
+		.destinations {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.destination {
+			flex-basis: calc(33.33% - 20px);
+			margin: 10px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+			text-align: center;
+		}
+
+		.destination:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.destination img {
+			max-width: 100%;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.destination h3 {
+			margin: 0;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		.destination p {
+			margin: 0;
+			font-size: 1rem;
+		}
+
+		.destination a {
+			display: block;
+			margin-top: 10px;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+
+		.destination a:hover {
+			background-color: #0069d9;
+		}
+	</style>
+</head>
+<body>
+	<h1>Destination Catalogue</h1>
+	<ul class="destinations">
+		<li class="destination">
+			<img src="TS.jpg" alt="Destination 1">
+			<h3>New York City, USA</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget mauris at nisl rhoncus convallis. Vivamus ac semper mi.</p>
+			<a href="#">View Destination</a>
+		</li>
+		<li class="destination">
+			<img src="tokyo.jpg" alt="Destination 2">
+			<h3>Tokyo, Japan</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget mauris at nisl rhoncus convallis. Vivamus ac semper mi.</p>
+			<a href="#">View Destination</a>
+		</li>
+		<li class="destination">
+			<img src="paris.jpg" alt="Destination 3">
+			<h3>Paris, France</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget mauris at nisl rhoncus convallis. Vivamus ac semper mi.</p>
+			<a href="#">View Destination</a>
+		</li>
+        <li class="destination">
+			<img src="Agra.jpg" alt="Destination 3">
+			<h3>Agra, India</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget mauris at nisl rhoncus convallis. Vivamus ac semper mi.</p>
+			<a href="#">View Destination</a>
+		</li>
+		<!-- Add more destinations here -->
+	</ul>
+</body>
+</html>
